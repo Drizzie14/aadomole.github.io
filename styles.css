@@ -1,0 +1,36 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgb(0, 8, 143);
+    padding: 80px 20px;
+}
+
+.hero-logo {
+    width:250px;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: rgb(255, 149, 0);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
