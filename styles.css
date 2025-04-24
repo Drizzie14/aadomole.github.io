@@ -5,7 +5,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #7500fd (0, 8, 143);
+    background-color: #7505fd;
     padding: 80px 20px;
 }
 
@@ -15,7 +15,7 @@ body {
 
 /* Service Cards */
 .service-card {
-    background-color: rgb(255, 149, 0);
+    background-color: #f83dff(255, 149, 0);
     color: white;
     padding: 20px;
     border-radius: 8px;
