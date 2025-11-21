@@ -1,0 +1,336 @@
+/* === FORCE COLOR FIX FOR ADE OMole RESOURCES SITE === */
+
+/* Body background and default text */
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: rgba(117, 0, 253, 0.25) !important; /* 25% opacity */
+  color: #ffffff !important;
+}
+
+/* Default white text */
+body * {
+  color: #ffffff !important;
+}
+
+/* Navbar: solid purple */
+nav.navbar, .navbar {
+  background-color: #7500fd !important;
+  color: #ffffff !important;
+}
+
+/* Footer: 80% opacity */
+footer, .site-footer, .page-footer {
+  background-color: rgba(117, 0, 253, 0.8) !important;
+  color: #ffffff !important;
+}
+
+/* Buttons */
+.btn, .btn-dark, .btn-primary {
+  background-color: rgba(117, 0, 253, 0.8) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* === Featured Resources Fix === */
+section.bg-light .resource-card,
+section.bg-light .resource-card * {
+  color: #7500fd !important;
+}
+
+/* === Partner Cards Fix === */
+section .card .card-title,
+section .card .card-body p,
+section .card .small.text-muted {
+  color: #7500fd !important;
+}
+
+/* Optional: darker muted text for better readability */
+section .card .small.text-muted {
+  color: #5e00ca !important;
+}
+
+
+/* === Fix invisible white text across About, Contact, and Partners pages === */
+
+/* General text visibility correction */
+body, section, main, .container, .card, .row, .col, p, h1, h2, h3, h4, h5, h6, label, input, textarea {
+  color: #000 !important;
+}
+
+/* Keep visible white text on colored areas like navbar, hero, and footer */
+.hero *, nav.navbar *, footer *, .cta-section * {
+  color: #ffffff !important;
+}
+
+/* Specific fix for Contact Page "Get in Touch" and related content */
+main.py-5, main.py-5 * {
+  color: #000 !important;
+}
+main.py-5 .btn.btn-primary {
+  color: #fff !important;
+}
+
+/* Partners page adjustments */
+.partners-section *, .partner-card * {
+  color: #000 !important;
+}
+
+/* About page adjustments */
+.about-section *, .mission-section *, .team-section * {
+  color: #000 !important;
+}
+.social-img {
+  width: 30px;   /* You can try 25px or 40px for fine-tuning */
+  height: 30px;
+  margin: 0 8px;
+  transition: transform 0.2s ease;
+}
+
+.social-img:hover {
+  transform: scale(1.1);
+}
+/* === Ade Omole Resources – Unified Style === */
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: rgba(117, 0, 253, 0.3) !important; /* 30% opacity */
+  backdrop-filter: blur(6px);
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .btn {
+  background-color: #fff !important;
+  color: #7500fd !important;
+  font-weight: 600;
+}
+
+/* === Hero === */
+.hero-section {
+  background: linear-gradient(rgba(117, 0, 253, 0.6), rgba(117, 0, 253, 0.6)),
+              url('../images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 80px 0;
+}
+
+/* === Specialty Section === */
+.specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.specialty-card {
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.specialty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(117, 0, 253, 0.3);
+}
+.specialty-card h5 {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #7500fd;
+}
+
+/* === Responsive Icons === */
+.specialty-card img {
+  width: 80px;
+  height: auto;
+  max-width: 25vw;
+  transition: transform 0.3s ease;
+}
+.specialty-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Responsive scaling for small screens */
+@media (max-width: 768px) {
+  .specialty-card img {
+    width: 60px;
+  }
+  .specialty-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialty-card img {
+    width: 50px;
+  }
+  .specialty-card h5 {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Buttons === */
+.btn {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* === CTA Section === */
+.cta-section {
+  background-color: rgba(117, 0, 253, 0.9);
+  color: #fff;
+}
+
+/* === Footer === */
+footer {
+  background-color: rgba(117, 0, 253, 0.3);
+  color: #fff;
+}
+footer p {
+  margin: 0;
+}
+
+/* === Resource Cards === */
+.resource-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(117,0,253,0.3);
+}
+
+/* === Partner Logos === */
+.partner-logo {
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+.partner-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+/* --- OUR AREA OF SPECIALTY --- */
+.specialty-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.specialty-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  min-height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialty-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 14px rgba(117, 0, 253, 0.25);
+  background-color: #f9f5ff;
+}
+
+.specialty-card .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.specialty-card:hover .icon {
+  transform: scale(1.1);
+}
+
+.specialty-card h5 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .specialty-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialty-card {
+    width: 100%;
+  }
+
+  .specialty-card .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/* Specialty Section Styling */
+.specialty-section .specialty-card {
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.specialty-section .specialty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-section .specialty-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.specialty-section .specialty-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .specialty-section .specialty-img {
+    height: 180px;
+  }
+}
