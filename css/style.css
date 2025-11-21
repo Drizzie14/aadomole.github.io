@@ -1,0 +1,155 @@
+
+:root {
+  --brand-purple: #7500fd;
+  --muted: #6c757d;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: rgba(117, 0, 253, 0.4);
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: top;
+  justify-content: top;
+  overflow: hidden;
+  color: #7500fd;
+  background: linear-gradient(120deg, rgba(117,0,253,0.3), rgba(117,0,253,0.2));
+}
+
+.hero-section canvas {
+  position: absolute;
+  inset: 0;
+  width: 90%;
+  height: 20%;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.btn-dark:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--brand-purple);
+  color: #fff;
+}
+
+/* Social icons */
+.social-links a {
+  font-size: 1.4rem;
+  color: #fff;
+  transition: opacity .3s;
+}
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+
+
+/* === Full-Site White Text + Opacity Rules === */
+* {
+  color: #ffffff !important;
+}
+
+nav.navbar, nav.navbar.bg-white, .navbar {
+  background-color: rgba(117, 0, 253, 0.8) !important;
+  color: #ffffff !important;
+}
+
+footer, footer.bg-white, .site-footer, .page-footer {
+  background-color: rgba(117, 0, 253, 0.8) !important;
+  color: #ffffff !important;
+}
+
+/* Links */
+a, a:visited, a:hover, a:active {
+  color: #ffffff !important;
+}
+
+/* Buttons */
+.btn, .btn-dark, .btn-primary {
+  background-color: rgba(117, 0, 253, 0.8) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+
+
+/* === White Background + Visible Text Fix === */
+
+/* Set entire page background to white */
+body {
+  background-color: #ffffff !important;
+}
+
+/* Preserve colored sections like navbar, hero, and footer */
+nav.navbar, .navbar, footer, .hero {
+  background-color: inherit !important;
+}
+
+/* Change only white text on light areas to black for visibility */
+section, .card, .resource-card, .container, .bg-light {
+  color: #000000 !important;
+}
+
+/* Keep white text where it's meant to be (on colored backgrounds) */
+.hero *, nav.navbar *, footer * {
+  color: #ffffff !important;
+}
+
+
+/* === Fix invisible white text across About, Contact, and Partners pages === */
+
+/* General text visibility correction */
+body, section, main, .container, .card, .row, .col, p, h1, h2, h3, h4, h5, h6, label, input, textarea {
+  color: #000 !important;
+}
+
+/* Keep visible white text on colored areas like navbar, hero, and footer */
+.hero *, nav.navbar *, footer *, .cta-section * {
+  color: #ffffff !important;
+}
+
+/* Specific fix for Contact Page "Get in Touch" and related content */
+main.py-5, main.py-5 * {
+  color: #000 !important;
+}
+main.py-5 .btn.btn-primary {
+  color: #fff !important;
+}
+
+/* Partners page adjustments */
+.partners-section *, .partner-card * {
+  color: #000 !important;
+}
+
+/* About page adjustments */
+.about-section *, .mission-section *, .team-section * {
+  color: #000 !important;
+}
